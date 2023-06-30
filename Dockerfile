@@ -1,4 +1,4 @@
-FROM php:7.4-fpm-alpine
-
-
-RUN docker-php-ext-install pdo pdo_mysql
+FROM python
+WORKDIR /app
+COPY . /app
+CMD ["python3","app.py"]
